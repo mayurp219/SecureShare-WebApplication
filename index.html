@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>File Sharing</h1>
+        <div id="sender" class="section">
+            <h2>Send File</h2>
+            <input type="file" id="fileInput" class="file-input">
+            <button onclick="sendFile()" class="btn">Send</button>
+            <div id="otpDisplay" class="otp-display"></div>
+        </div>
+
+        <div id="receiver" class="section">
+            <h2>Receive File</h2>
+            <input type="text" id="otpInput" class="otp-input" placeholder="Enter OTP">
+            <button onclick="receiveFile()" class="btn">Receive</button>
+            <a id="downloadLink" href="#" download style="display:none;" class="btn">Download File</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
